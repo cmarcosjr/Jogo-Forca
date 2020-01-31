@@ -289,7 +289,7 @@ form.style1 label {
     margin: auto;
     display: block;
     width: 65%;
-    height: 500px;
+   
 }
 #palavras{
 	display: block;
@@ -406,3 +406,13 @@ display: block;
   	width: 130%;
   } 
 }
+
+@media ( max-width: 730px ) {
+#forca{
+	width: 247%;
+}
+ #h02{
+ 	right: -30px;
+ }
+}
+
