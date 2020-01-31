@@ -407,12 +407,5 @@ display: block;
   } 
 }
 
-@media ( max-width: 730px ) {
-#forca{
-	width: 247%;
-}
- #h02{
- 	right: -30px;
- }
-}
+
 
