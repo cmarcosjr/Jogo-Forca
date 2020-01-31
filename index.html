@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>:::Jogo da Forca:::</title>
+
+		<link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ 	</head>
+	<body>
+		<div id="main">
+			<div id="corpo">
+				<h1 id="X01">JOGO DA FORCA</h1>
+				<div id="alinha">
+					<div id="palavras">
+						<p id="h99"></p>
+					</div>
+				</div>
+				<div id="esquerda">
+					<p id="AVISO">Escolha o "Tema"</p>
+						<div id="DIV01">
+							<div id="escreveLetra">
+								<p id="Ltr" style="display:none"><b>Letras Jogadas: </b></p>
+							</div>
+							<div id="alinhaFormLtr">
+								<form id="FormLTR" action="" class="style1" style="display:none">
+									<label for="TxtLtr">Letra:</label>
+									<input type="text" name="TxtLtr" id="TxtLtr" size="4"/>
+								</form>
+							</div>
+							<div class="btnEnviaLtr">
+								<button class="button btnOk" id="BTN01" onclick="TESTA_LETRA()">OK</button>
+								<button class="button btnDicas" id="BTN03" onclick="DICA()">Dica</button>
+							</div>
+							<!-- <form id="FormPlv" action="" class="style1" style="display:none">
+								<label for="TxtPlv">Palavra:</label>
+								<input type="text" name="TxtPlv" id="TxtPlv" size="12" autofocus/>
+							</form> -->
+							<form id="FormOpc" action="" style="display:block";>
+								<input type="radio" name="tipowrd" onclick="PegaTP(this.value)" value="Dicionário">Dicionário<br>
+								<input type="radio" name="tipowrd" onclick="PegaTP(this.value)" value="Fruta">Frutas<br>
+								<input type="radio" name="tipowrd" onclick="PegaTP(this.value)" value="Time">Times<br>
+								<input type="radio" name="tipowrd" onclick="PegaTP(this.value)" value="Empresa">Csc<br>
+							</form>
+							<p id="h00" style="display:none"></p>
+							<!-- <p id="Tema"></p> -->
+						</div>
+						<div id="JogoNovo">
+							<button class="button outraVez" id="BTN00" onclick="RELOAD()">Jogar Novamente</button>
+							<button class="button BtnVer" id="BTN04" onclick=window.open(LINK);ClearBTN();></button>
+						</div>
+				</div>
+				<div id="direita">	
+					<div id="DIVCORPO">
+		    			<div id="forca">
+		    				<img src="forca-sem-corda.png" class="tmImg" width="33%">
+						<div id="CHAPEU">
+							<img src="corda-forca.png" width="30%">
+						</div>
+					    <div id="CABECA">
+					    	<img src="cabeca-forca.png" width="30%">
+					    </div>
+						<div id="TRONCO">
+							<img src="tronco-forca.png" width="30%">
+							<div id="BRACOD1">
+								<div id="BRACOD2">
+									<img src="braco-direito-forca.png" width="30%">				
+								</div>
+							</div>
+							<div id="BRACOE1">
+								<div id="BRACOE2">
+									<img src="braco-esquerdo-forca.png" width="30%">				
+								</div>
+							</div>
+							<div id="COXAD">
+								<div id="PERNAD">
+									<img src="perna-direita-forca.png" width="30%">					
+								</div>
+							</div>
+							<div id="COXAE">
+								<div id="PERNAE">
+									<img src="perna-esquerda-forca.png" width="30%">					
+								</div>
+							</div>
+						</div>
+						<h1 id="h01"></h1>
+		    		</div>
+						<h1 id="h02"></h1>			
+				</div>
+			</div>		
+		</div>	
+		</div>
+		<audio id="myAudio" controls="controls" autobuffer="autobuffer" style="display:none;position:absolute;left:7.5%;top:56.5%;">
+			<source src="">
+		</audio>	
+		<p id="EE"></p>
+	</body>
+	<script src="script.js"></script>
+</html>
