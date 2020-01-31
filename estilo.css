@@ -353,18 +353,18 @@ display: block;
     width: 90%;
   }
   #CHAPEU {
-  	left:90px;
+  	left:102px;
   	width: 60%;
-  	top: 23px;
+  	top: 26px;
   }
   #CABECA{
-  	top: 40px;
-  	left: 90px;
+  	top: 46px;
+  	left: 102px;
   	width: 60%;
   }
   #TRONCO{
-  	top:60px ;
-  	left: 94px;
+  	top:67px ;
+  	left: 106px;
   	width:45%;
   }
   #BRACOD2{
@@ -383,9 +383,9 @@ display: block;
 	left:-5px ;
   }
   #PERNAE{
-	width:76% ;
+	width:67% ;
 	bottom: 12px;
-	right:-11px ;
+	right:-13px ;
   }
   #JogoNovo {
   	left: -5px;
@@ -396,7 +396,7 @@ display: block;
   }
   #h02{
   	position: relative;
-  	top: 10px;
+  	top: 30px;
   	right: -30px;
   }
   #h99 {
